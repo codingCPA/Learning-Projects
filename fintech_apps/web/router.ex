@@ -20,6 +20,7 @@ defmodule FintechApps.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/", RootController, :index
+    get "/linked", LinkedController, :index
 
     resources "/users", UserController
 
